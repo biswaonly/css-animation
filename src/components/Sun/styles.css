@@ -1,0 +1,102 @@
+.wrapper {
+  background-color: skyblue;
+}
+
+.sun {
+  height: 200px;
+  width: 200px;
+  background-color: #eebe39;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.cl {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  top: 100px;
+  position: relative;
+  z-index: 10;
+}
+
+.ou {
+  height: 50px;
+  width: 115px;
+  background-color: white;
+  left: 20px;
+  top: 50px;
+  border-radius: 25px;
+  position: relative;
+  z-index: 8;
+}
+
+.d {
+  height: 40px;
+  width: 64px;
+  z-index: 9;
+  left: 60px;
+  -webkit-clip-path: polygon(0 0, 28% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 64% 0, 100% 100%, 0% 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(white), to(lightgray));
+  background-image: linear-gradient(to top, white 0%, lightgray 100%);
+  position: relative;
+}
+
+.cloud {
+  -webkit-animation-name: cloud;
+          animation-name: cloud;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  position: relative;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes cloud {
+  0% {
+    background-color: transparent;
+    left: -150px;
+    opacity: 0;
+  }
+  20% {
+    background-color: transparent;
+    left: -70px;
+    opacity: 1;
+  }
+  80% {
+    background-color: transparent;
+    left: 170px;
+    opacity: 1;
+  }
+  100% {
+    background-color: transparent;
+    left: 250px;
+    opacity: 0;
+  }
+}
+
+@keyframes cloud {
+  0% {
+    background-color: transparent;
+    left: -150px;
+    opacity: 0;
+  }
+  20% {
+    background-color: transparent;
+    left: -70px;
+    opacity: 1;
+  }
+  80% {
+    background-color: transparent;
+    left: 170px;
+    opacity: 1;
+  }
+  100% {
+    background-color: transparent;
+    left: 250px;
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,51 @@
+.four {
+  background-color: lightgray;
+  height: 100vh;
+}
+
+.four .dark_cloud {
+  height: 300px;
+  width: 400px;
+  background-color: tan;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: relative;
+}
+
+.four .dark_cloud .cl_1 {
+  height: 110px;
+  width: 135px;
+  background-color: darkgray;
+  border-radius: 50%;
+  left: 40px;
+  position: absolute;
+}
+
+.four .dark_cloud .cl_2 {
+  height: 80px;
+  width: 80px;
+  background-color: darkgray;
+  border-radius: 50%;
+  left: 40px;
+  position: absolute;
+}
+
+.four .dark_cloud .cl_3 {
+  height: 110px;
+  width: 135px;
+  background-color: darkgray;
+  border-radius: 50%;
+  left: 40px;
+  position: absolute;
+}
+
+.four .dark_cloud .cl_4 {
+  height: 110px;
+  width: 135px;
+  background-color: darkgray;
+  border-radius: 50%;
+  left: 40px;
+  position: absolute;
+}
+/*# sourceMappingURL=styles.css.map */

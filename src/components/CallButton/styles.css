@@ -1,0 +1,67 @@
+.seven {
+  height: 200px;
+  width: 200px;
+  background-color: skyblue;
+  position: relative;
+}
+
+.seven .call_mice {
+  height: 30px;
+  width: 50px;
+  position: relative;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  z-index: 10;
+  background-color: red;
+}
+
+.seven .call_mice .call_box {
+  height: 30px;
+  width: 50px;
+  background-color: gray;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  position: absolute;
+  -webkit-transform: perspective(10px) rotateX(10deg);
+          transform: perspective(10px) rotateX(10deg);
+  margin: 10px;
+}
+
+.seven .call_one {
+  top: 120px;
+  left: 10px;
+}
+
+.seven .call_two {
+  top: 0px;
+  left: 100px;
+}
+
+.seven .call_hand {
+  height: 206px;
+  width: 120px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-radius: 50%;
+  background-color: teal;
+  position: absolute;
+  top: -13px;
+  left: 34px;
+}
+
+.seven .call_hand1 {
+  height: 200px;
+  width: 100px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-radius: 50%;
+  background-color: skyblue;
+  position: absolute;
+  top: -30px;
+  left: 25px;
+}
+/*# sourceMappingURL=styles.css.map */

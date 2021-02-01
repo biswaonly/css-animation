@@ -1,0 +1,100 @@
+.six {
+  height: 100vh;
+  background-color: skyblue;
+  margin: 0;
+  padding: 0;
+}
+
+.six .spk {
+  position: absolute;
+  top: calc(50% - 150px);
+  left: calc(50% - 150px);
+  -webkit-transform: perspective(1000px) rotateY(-45deg);
+          transform: perspective(1000px) rotateY(-45deg);
+  width: 200px;
+  height: 300px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.six .spk div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-animation: wheel 5s infinite linear;
+          animation: wheel 5s infinite linear;
+}
+
+.six .spk div span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#f1f1f1), color-stop(#bbb), to(#f1f1f1));
+  background: linear-gradient(0deg, #f1f1f1, #bbb, #f1f1f1);
+  border-radius: 20px;
+}
+
+.six .spk div span:nth-child(1) {
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+}
+
+.six .spk div span:nth-child(2) {
+  -webkit-transform: rotateX(45deg);
+          transform: rotateX(45deg);
+}
+
+.six .spk div span:nth-child(3) {
+  -webkit-transform: rotateX(-45deg);
+          transform: rotateX(-45deg);
+}
+
+.six .spk div span:nth-child(4) {
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+}
+
+@-webkit-keyframes wheel {
+  0% {
+    -webkit-transform: perspective(1000px) rotateX(0deg);
+            transform: perspective(1000px) rotateX(0deg);
+  }
+  100% {
+    -webkit-transform: perspective(1000px) rotateX(359deg);
+            transform: perspective(1000px) rotateX(359deg);
+  }
+}
+
+@keyframes wheel {
+  0% {
+    -webkit-transform: perspective(1000px) rotateX(0deg);
+            transform: perspective(1000px) rotateX(0deg);
+  }
+  100% {
+    -webkit-transform: perspective(1000px) rotateX(359deg);
+            transform: perspective(1000px) rotateX(359deg);
+  }
+}
+
+.spk::before {
+  content: '';
+  position: absolute;
+  height: 60px;
+  width: 100%;
+  left: -10px;
+  bottom: -130px;
+  background: #000;
+  -webkit-filter: blur(40px);
+          filter: blur(40px);
+  opacity: 0.7;
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+}
+/*# sourceMappingURL=styles.css.map */
